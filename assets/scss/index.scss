@@ -4,12 +4,22 @@
     background-color: #EDEBE6;
 
     .nairobi-logo {
-        width: 100%;
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         padding: 0 2rem;
+
+        .image {
+            width: 75px;
+            height: 75px; 
+            >* {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     }
 
     .dashboard {
@@ -18,28 +28,108 @@
         flex-direction: column;
         align-items: center;
 
-        // margin: 10% 2rem 0 2rem;
+        margin: 8% 2rem 0 2rem;
+
+        h1 {
+            margin: 0 0 50px 0;
+        }
 
         .dash-cards {
             display: flex;
 
-            .card {
-                // width: 15rem;
-                // height: 10rem;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
 
-                border: 2px solid black;
+
+            .card {
+                width: 18rem;
+                height: 12rem;
+
+                border: none;
                 border-radius: 10px;
                 background-color: #FEFEFF;
 
                 display: flex;
-                align-items: center;
-                // justify-content: center;
                 flex-direction: column;
 
-                margin: 0 1rem 0 0;
+                margin: 0 2.5rem 0 0;
+
+                h1 {
+                    font-size: smaller;
+                    margin: 10px 0 0 10px;
+                    font-weight: 900;
+                    color: darkgrey;
+                }
 
                 .content {
                     display: flex;
+                    align-self: center;
+                    align-items: center;
+
+                    margin: 20px 0 0 0;
+
+                    span {
+                        font-size: 2.5rem;
+                        font-weight: 900;
+                        opacity: 0.5;
+                        margin: 0 10px 0 0;
+                    }
+
+                    p {
+                        font-weight: 700;
+                        margin: 0 0 0 10px;
+                    }
+
+                }
+
+                button {
+                    align-self: center;
+                    margin: 30px 0 0 0;
+
+                    width: 80%;
+                    height: 35px;
+                    border: none;
+                    border-radius:20px;
+
+                    background-color: #517148;
+                }
+            }
+        }
+    }
+
+    .latest-posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        .nairobi-logo {
+            .image {
+
+            }
+        }
+
+        .dashboard {
+            h1 {
+
+            }
+
+            .dash-cards {
+                
+                .card {
+                    margin: 0 0 50px 0;
+
+                    h1 {
+
+                    }
+                    .content {
+
+                    }
                 }
             }
         }

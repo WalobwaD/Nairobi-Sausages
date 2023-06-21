@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <div class="nairobi-logo">
-            <img src="/nairobilogo.webp"/>
+            <div class="image"><img src="/nairobilogo.webp"/></div>
             <NuxtLink to="/login">Login</NuxtLink>
         </div>
         <div class="dashboard">
@@ -21,6 +21,7 @@
         </div>
         <div class="latest-posts">
             <h1>Latest Posts</h1>
+            <div>Items</div>
         </div>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <div class="barner">
+        <div name="fade" class="barner" >
             <img src="/Kenyancheesesausages.jpg"/>
         </div>
         <div class="logo-form">
@@ -24,6 +24,7 @@
                 <div class="text">
                     <p>Don't Have an Account? <a>Register</a></p>
                     <p>Forgot Password</p>
+                    <NuxtLink to="/">Home</NuxtLink>
                 </div>
             </form>
         </div>
@@ -32,6 +33,7 @@
 </template>
 
 <script setup>
+
 </script>
 <style scoped lang="scss">
 @use '~/assets/scss/login.scss';

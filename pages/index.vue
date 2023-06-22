@@ -25,12 +25,20 @@
             </div>
             <LatestCards />
         </div>
+
+        <!--CopyRight-->
+        <footer class="footer">
+            <p>© {{ year }} Walobwa Dan. All Rights Reserved.</p>
+        </footer>
     </div>
 
 </template>
 
 <script setup>
 
+//dynamic date
+const date = new Date();
+const year = date.getFullYear();
 </script>
 
 <style scoped lang="scss">

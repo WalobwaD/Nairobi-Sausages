@@ -1,6 +1,7 @@
 <template>
 
     <div class="main">
+        
         <!--Top Bar-->
         <div class="nairobi-logo">
             <div class="image"><img src="/nairobilogo.webp"/></div>

@@ -105,17 +105,22 @@
             display: none;
         }
         .logo-form {
-            width: 100%;
+            width: 90%;
 
             .login-form {
                 width: 80%;
         
                 .labels {
-                    width: 100%;
+                    width: 80%;
+                }
+
+                input {
+                    height: 2rem;
+                    padding: 0.4rem;
                 }
     
                 .login-button {
-                    width: 100%;
+                    width: 80%;
                     border-radius: 30px;
                 }
             }

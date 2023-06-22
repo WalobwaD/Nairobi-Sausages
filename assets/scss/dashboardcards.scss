@@ -57,10 +57,12 @@
             border-radius:20px;
 
             background-color: #517148;
+            color: #FEFEFF;
         }
 
         .order{
             background-color: #F3D153;
+            color: black;
         }
     }
 }
@@ -81,7 +83,7 @@
 
             }
             .content {
-                margin: 10px 0 0 10px;
+                margin: 10px 0 0 0;
                 height: 30px;
 
                 span {
@@ -103,7 +105,7 @@
             }
 
             button {
-                margin: 10px 0 0 0;
+                margin: 5px 0 0 0;
             
             }
         }

@@ -28,7 +28,7 @@
                 <div class="text">
                     <p>Don't Have an Account? <a>Register</a></p>
                     <p>Forgot Password</p>
-                    <NuxtLink to="/">Home</NuxtLink>
+                    <NuxtLink to="/"><Icon class="icon" name="mdi:arrow-left-thin" color="black"/></NuxtLink>
                 </div>
             </form>
         </div>

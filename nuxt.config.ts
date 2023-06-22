@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxtjs/color-mode'],
+  modules: ['nuxt-icon'],
   css: [
     '~/assets/scss/global.scss'
   ],

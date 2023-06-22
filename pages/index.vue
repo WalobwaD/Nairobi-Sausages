@@ -5,12 +5,15 @@
         <!--Top Bar-->
         <div class="nairobi-logo">
             <div class="image"><img src="/nairobilogo.webp"/></div>
-            <NuxtLink to="/login">Login</NuxtLink>
+            <NuxtLink to="/login"><Icon class="icon" name="mdi:account-circle-outline"/></NuxtLink>
         </div>
 
         <!--Dashboard Section-->
         <div class="dashboard">
-            <h1>DashBoard</h1>
+            <div class="title">
+                <h1>DashBoard</h1>
+                <div class="line"></div>
+            </div>
             <DashBoardCards />
         </div>
 

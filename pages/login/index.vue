@@ -1,12 +1,16 @@
 <template>
     <div class="main">
-        <div name="fade" class="barner" >
+
+        <div class="barner" >
             <img src="/Kenyancheesesausages.jpg"/>
         </div>
+
         <div class="logo-form">
+
             <div class="nairobi-logo">
                 <img src="/nairobilogo.webp"/>
             </div>
+            
             <form class="login-form">
                 <div class="labels">
                     <label for="email">Enter Your Email Address</label>
@@ -32,7 +36,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
 </script>
 <style scoped lang="scss">

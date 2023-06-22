@@ -6,7 +6,7 @@
             <div class="card-text">
                 <h2>{{post.title}}</h2>
                 <div class="tags">
-                    <div class="tag" v-for="tag in post.tags" :key="post.id">
+                    <div class="tag" v-for="tag, index in post.tags" :key="index" :style="getTagColor()">
                         {{ tag }}
                     </div>
                 </div>
@@ -21,6 +21,25 @@
 
 <script setup> 
 const {data: latestPosts } = await useFetch('/api/latest')
+
+const getTagColor = (index) =>{
+
+    const colors = ['#FDEBDD', '#F0E4DB', '#E9DAF0', '#EFDBE0', '#FCF7DC', '#DCE6FC'];
+    const randomize = Math.floor(Math.random() * colors.length);
+    const tagColor = colors[randomize];
+    return {
+        backgroundColor: tagColor,
+        border: `2px solid ${tagColor}`
+    };
+
+}
+// methods: {
+//     getTagColor(index) {
+//       const colors = ['blue', 'red', 'green', 'yellow'];
+
+//       return colors[index % colors.length];
+//     }
+//   }
 
 </script>
 

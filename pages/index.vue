@@ -19,7 +19,10 @@
 
         <!--LatestPosts section-->
         <div class="latest-posts">
-            <h1>Latest Posts</h1>
+            <div class="title">
+                <h1>Latest Posts</h1>
+                <div class="line"></div>
+            </div>
             <LatestCards />
         </div>
     </div>

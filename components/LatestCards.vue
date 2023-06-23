@@ -22,7 +22,7 @@
 <script setup> 
 const {data: latestPosts } = await useFetch('/api/latest')
 
-const getTagColor = (index) =>{
+const getTagColor = () =>{
 
     const colors = ['#FDEBDD', '#F0E4DB', '#E9DAF0', '#EFDBE0', '#FCF7DC', '#DCE6FC'];
     const randomize = Math.floor(Math.random() * colors.length);
@@ -33,13 +33,7 @@ const getTagColor = (index) =>{
     };
 
 }
-// methods: {
-//     getTagColor(index) {
-//       const colors = ['blue', 'red', 'green', 'yellow'];
 
-//       return colors[index % colors.length];
-//     }
-//   }
 
 </script>
 

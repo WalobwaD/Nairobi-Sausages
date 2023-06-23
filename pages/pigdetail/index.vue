@@ -4,6 +4,8 @@
         <TopBar />
 
         <form class="form">
+            <NuxtLink to="/"><Icon class="icon" name="mdi:arrow-left-thin" color="black"/></NuxtLink>
+
     
             <div class="range">
                 <div class="head">

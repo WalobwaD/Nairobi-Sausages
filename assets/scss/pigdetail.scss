@@ -1,7 +1,7 @@
 .main {
 
     width: 100%;
-    height: 100vh;
+    height: 118vh;
 
     background-color: #EDEBE6;
     
@@ -9,7 +9,7 @@
     flex-direction: column;
 
     .form {
-        height: 100%;
+        // height: 100%;
         width: 70%;
 
         display: flex;
@@ -18,7 +18,7 @@
 
         align-self: center;
 
-        margin: 40px 0 0 0;
+        margin: 10px 0 0 0;
 
 
         .range {
@@ -122,6 +122,11 @@
 
             cursor: pointer;
 
+        }
+
+        .icon {
+            font-size: 2rem;
+            opacity: 0.6;
         }
 
         >* {

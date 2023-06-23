@@ -21,6 +21,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        overflow: scroll;
 
         .nairobi-logo {
 
@@ -80,6 +81,7 @@
     
                 border: none;
                 border-radius: 55px;
+                cursor: pointer;
             }
             >* {
                 margin: 20px 0 0 20px;
@@ -93,13 +95,13 @@
 @media screen and (max-width: 768px) {
 
     .main {
-        width: 100%;
+
         align-items: center;
         justify-content: center;
 
         background: url(/mobilefade.webp);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         .barner {
 
             display: none;

@@ -1,5 +1,5 @@
 <template>
-    <div v-motion-slide-right class="dash-cards">
+    <div class="dash-cards">
         <div class="card">
             <h1>Farm</h1>
             <div class="content"><span>2</span>| <p>KIAMBU COUNTY</p></div>

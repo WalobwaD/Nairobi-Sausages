@@ -1,5 +1,5 @@
 <template>
-    <div v-motion-slide-right class="posts">
+    <div class="posts">
 
         <div class="post" v-for="post in latestPosts" :key="post.id">
             <div class="image"><img :src="post.image"/></div>

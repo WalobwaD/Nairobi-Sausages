@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
 
   devtools: { enabled: false },
-  modules: ['nuxt-icon', '@vueuse/motion/nuxt'],
+  modules: ['nuxt-icon'],
   css: [
     '~/assets/scss/global.scss'
   ],
@@ -16,24 +16,4 @@ export default defineNuxtConfig({
       ]
     },
   },
-  runtimeConfig: {
-    public: {
-      motion: {
-        directives: {
-          'pop-bottom': {
-            initial: {
-              scale: 0,
-              opacity: 0,
-              y: 100,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              y: 0,
-            }
-          }
-        }
-      }
-    }
-  }
 })

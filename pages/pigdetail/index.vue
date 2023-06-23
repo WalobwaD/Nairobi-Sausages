@@ -10,12 +10,12 @@
             <div class="range">
                 <div class="head">
                     <h2>Submit a batch</h2>
-                    <span>22</span>
+                    <span>{{computedNumber}}</span>
                 </div>
-                <input type="range"/>
+                <input type="range" v-model="rangeValue" min="0" max="50"/>
                 <div class="numbers">
                     <span>0</span>
-                    <span>100</span>
+                    <span>50</span>
                 </div>
             </div>
     
@@ -62,7 +62,21 @@
 
 </template>
 
-<script setup>
+<script>
+export default {
+  data() {
+    return {
+      rangeValue: 50 // Initial value of the range input
+    };
+  },
+  computed: {
+    computedNumber() {
+      return this.rangeValue;
+    }
+  }
+};
+
+
 </script>
 
 <style scoped lang="scss">

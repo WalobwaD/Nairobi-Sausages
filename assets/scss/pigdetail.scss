@@ -1,0 +1,154 @@
+.main {
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #EDEBE6;
+    
+    display: flex;
+    flex-direction: column;
+
+    .form {
+        height: 100%;
+
+        width: 60%;
+        align-self: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+
+        .range {
+
+            width: 45%;
+
+            .head {
+
+                display: flex;
+                align-items: center;
+
+                justify-content: space-between;
+                h2 {
+                    font-size: 1rem;
+                    opacity: 0.6;
+                }
+
+            }
+
+            input {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 8px;
+                background-color: #ccc;
+                outline: none;
+            }   
+            input::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 16px;
+                height: 16px;
+                background-color: #507048;
+                border: none;
+                border-radius: 50%;
+            }
+
+
+            .numbers {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .input-fields {
+            display: flex;
+            flex-direction: column;
+
+            width: 45%;
+
+            label {
+                font-size: small;
+                opacity: 0.6;
+                font-weight: 600;
+
+                margin: 0 0 5px 0;
+            }
+
+            select {
+                appearance: none;
+                height: 48px;
+                border-radius: 4px;
+
+                background-color: #EEEFEF;
+                border: none;
+                padding: 12px 19px;
+                display: flex;
+                align-items: center;
+            }
+
+            select:focus {
+                outline: none;
+                border-color: #507048;
+                box-shadow: 0 0 3px #507048;
+            }
+
+            select::selection {
+                background-color: #507048;
+            }
+
+            select option {
+                border: none;
+                outline: none;
+            }
+
+            select option:checked {
+                background-color: #507048;
+                color: #EEEFEF;
+            }
+        }
+
+        .button {
+            width: 45%;
+            height: 40px;
+            border-radius: 30px;
+
+            background-color:  #202527;
+            border: none;
+
+            color: #EDEBE6;
+            font-weight: 600;
+            font-size: small;
+
+            cursor: pointer;
+
+        }
+
+        >* {
+            margin: 10px 0 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+        .main {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+    
+            .form {
+                width: 80%;
+    
+                .range {
+                    width: 100%;
+                }
+    
+                .input-fields {
+                    width: 100%;
+                }
+    
+                .button {
+                    width: 100%;
+                }
+            }
+        }
+}

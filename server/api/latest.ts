@@ -1,6 +1,12 @@
 export default defineEventHandler(event => {
     return [
       {
+        "id": 0,
+        "title": "Lemonade Chicken",
+        "tags": ['chicken', 'lemon'],
+        "image": "/images/latest/Lemonade-Chicken.jpg"
+      },
+      {
         "id": 1,
         "title": "Lemon Cornmeal Cake",
         "tags": ['blueberries', 'lemon'],
@@ -9,25 +15,25 @@ export default defineEventHandler(event => {
       {
         "id": 2,
         "title": "Strawberry Buttermilk Pancakes",
-        "tags": ['blueberries', 'lemon'],
+        "tags": ['pancakes', 'strawberry'],
         "image": "/images/latest/Strawberry-Buttermilk-Pancakes.jpg"
       },
       {
         "id": 3,
         "title": "Strawberry Sauce",
-        "tags": ['blueberries', 'lemon'],
+        "tags": ['strawberry'],
         "image": "/images/latest/Strawberry-Sauce.jpg"
       },
       {
         "id": 4,
         "title": "Cherry Martini",
-        "tags": ['blueberries', 'lemon'],
+        "tags": ['cherry', 'cocktail'],
         "image": "/images/latest/Cherry-Martini.jpg"
       },
       {
         "id": 5,
         "title": "Cinnamon Swirl Cheesecake",
-        "tags": ['blueberries', 'lemon'],
+        "tags": ['cheesecake', 'cinnamon'],
         "image": "/images/latest/Cinnamon-Swril-Cheescake.jpg"
       }
     ];

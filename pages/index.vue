@@ -3,10 +3,7 @@
     <div class="main">
         
         <!--Top Bar-->
-        <div class="nairobi-logo">
-            <div class="image"><img src="/nairobilogo.webp"/></div>
-            <NuxtLink to="/login"><Icon class="icon" name="mdi:account-circle-outline"/></NuxtLink>
-        </div>
+        <TopBar />
 
         <!--Dashboard Section-->
         <div class="dashboard">

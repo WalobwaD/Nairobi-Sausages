@@ -71,7 +71,7 @@ export default {
         { label: '60-120 kgs', value: '60-120' },
         { label: '120-180 kgs', value: '120-180' }
       ],
-      priceOptions: 'ksh. 0.00'
+      priceOptions: 0.00
     };
   },
   computed: {

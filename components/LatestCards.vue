@@ -1,7 +1,7 @@
 <template>
     <div class="posts">
 
-        <div class="post" v-for="post in latestPosts" :key="post.id">
+        <div ref="container" class="post" v-for="post in latestPosts" :key="post.id">
             <div class="image"><img :src="post.image"/></div>
             <div class="card-text">
                 <h2>{{post.title}}</h2>
@@ -20,6 +20,19 @@
 </template>
 
 <script setup> 
+import gsap from "gsap"
+import {ref, onMounted} from "vue"
+
+const container = ref(null)
+onMounted(()=>{
+    gsap.from(container.value, {
+        autoAlpha: 0,
+        duration: 1,
+        delay: 0.5,
+        x: '+100',
+        ease: "back.out(1.7)"
+    })
+})
 const {data: latestPosts } = await useFetch('/api/latest')
 
 const getTagColor = () =>{

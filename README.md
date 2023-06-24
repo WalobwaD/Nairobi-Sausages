@@ -8,6 +8,7 @@
 
 - VueJS(NuxtJS) - Built with NuxtJS, a VueJS framework to implement SSR and SEO.
 - SASS - Used the SASS preprocessor for styling and responsiveness.
+- GSAP - Used GSAP for animations.
 - Vercel - Deployed on Vercel, a cloud platform for static sites and Serverless Functions.
 
 > Core components

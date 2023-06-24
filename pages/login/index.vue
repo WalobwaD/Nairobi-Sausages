@@ -1,7 +1,7 @@
 <template>
     <div class="main">
 
-        <div class="barner" >
+        <div ref="container" class="barner" >
             <img src="/Kenyancheesesausages.jpg"/>
         </div>
 
@@ -36,8 +36,19 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
+import gsap from "gsap"
+import {ref, onMounted} from "vue"
 
+const container = ref(null)
+onMounted(()=>{
+    gsap.from(container.value, {
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: "back.out(1.7)"
+    })
+})
 </script>
 <style scoped lang="scss">
 @use '~/assets/scss/login.scss';

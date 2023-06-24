@@ -98,7 +98,7 @@ export default {
             return (15000 * this.computedNumber).toFixed(2)
         } else if (ageValue === '6-9' && weightValue === '0-60') {
             return (20000 * this.computedNumber).toFixed(2)
-        } else if(ageValue === '6-9' && weightValue === '120-180') {
+        } else if(ageValue === '6-9' && weightValue === '60-120') {
             return (30000 * this.computedNumber).toFixed(2)
         }
         return this.priceOptions

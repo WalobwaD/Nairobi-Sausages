@@ -67,6 +67,18 @@
 
             width: 45%;
 
+            .price {
+                appearance: none;
+                height: 35px;
+                border-radius: 4px;
+
+                background-color: #EEEFEF;
+                border: none;
+                padding: 12px 19px;
+                display: flex;
+                align-items: center;
+            }
+
             label {
                 font-size: small;
                 opacity: 0.6;

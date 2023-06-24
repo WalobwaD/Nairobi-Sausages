@@ -11,14 +11,14 @@
 - Vercel - Deployed on Vercel, a cloud platform for static sites and Serverless Functions.
 
 > Core components
-- Login Page https://nairobisausages.vercel.app/login
-- Sell Page https://nairobisausages.vercel.app/pigdetail - Includes the ask per price calculation depending on the age and weight of the pig.
-- Dashboard Page https://nairobisausages.vercel.app/ - Fetches latest posts from http://noblepig.com/
+- Login Page https://nairobisausages-dan.vercel.app/login
+- Sell Page https://nairobisausages-dan.vercel.app/pigdetail - Includes the ask per price calculation depending on the age and weight of the pig.
+- Dashboard Page https://nairobisausages-dan.vercel.app/ - Fetches latest posts from http://noblepig.com/
 <h2>Demo</h2>
 
 > Deployed site 
 <br>
-<a href="https://nairobisausages.vercel.app">nairobisausages.vercel.app</a>
+<a href="https://nairobisausages-dan.vercel.app">nairobisausages-dan.vercel.app</a>
 
 <img src="./assets/Login%20Screenshot.png"/>
 <div align="center">

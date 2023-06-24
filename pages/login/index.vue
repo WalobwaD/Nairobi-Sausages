@@ -26,8 +26,8 @@
                 <button class="login-button">Login</button>
     
                 <div class="text">
-                    <p>Don't Have an Account? <a>Register</a></p>
-                    <p>Forgot Password</p>
+                    <p>Don't Have an Account? <a class="register">Register</a></p>
+                    <p class="forgot">Forgot Password</p>
                     <NuxtLink to="/"><Icon class="icon" name="mdi:arrow-left-thin" color="black"/></NuxtLink>
                 </div>
             </form>

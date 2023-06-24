@@ -86,6 +86,19 @@
             >* {
                 margin: 20px 0 0 20px;
             }
+
+            .register {
+                color: #517148;
+                text-decoration: underline;
+
+            }
+
+            .forgot {
+                color: #517148;
+                text-decoration: underline;
+
+
+            }
         }
 
     }
@@ -95,10 +108,10 @@
 @media screen and (max-width: 768px) {
 
     .main {
-
         align-items: center;
         justify-content: center;
 
+        overflow: scroll;
         background: url(/mobilefade.webp);
         background-repeat: no-repeat;
         background-size: cover;

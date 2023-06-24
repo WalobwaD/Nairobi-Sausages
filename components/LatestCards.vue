@@ -29,7 +29,7 @@ const getTagColor = () =>{
     const tagColor = colors[randomize];
     return {
         backgroundColor: tagColor,
-        border: `2px solid ${tagColor}`
+        border: `1px solid ${tagColor}`
     };
 
 }

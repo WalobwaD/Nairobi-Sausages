@@ -39,14 +39,6 @@
                 margin: 10px 0 10px 0;
             }
 
-            p {
-                white-space: nowrap;     /* Prevents line breaks within the text */
-                overflow: hidden;        /* Hides any content that exceeds the container's width */
-                text-overflow: ellipsis; /* Displays an ellipsis (...) when the text overflows */
-                width: 100%;
-                margin: 0 0 5px 0;
-            }
-
             .tags {
                 
                 display: flex;
@@ -65,7 +57,9 @@
 
                     cursor: pointer;
                 }
+
             }
+
         }
 
 

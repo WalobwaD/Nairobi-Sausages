@@ -8,9 +8,9 @@
         <div class="card">
             <h1>Pigs</h1>
             <div class="content"><span>36</span>| <p>LARGE WHITE</p></div>
-            <button class="sell">
-                <NuxtLink to="/pigdetail">Sell a Batch</NuxtLink>
-            </button>
+            <NuxtLink class="sell" to="/pigdetail">
+                Sell a batch
+            </NuxtLink>
         </div>
     </div>
 </template>

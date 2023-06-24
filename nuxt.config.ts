@@ -11,9 +11,9 @@ export default defineNuxtConfig({
     head: {
       title: 'Nairobi Suasages',
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/background.jpeg' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/apple-touch-icon.png' }
       ]
     },
-  },
+  }
 })

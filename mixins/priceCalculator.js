@@ -5,17 +5,27 @@ const PriceCalculator = {
         selectedAge: '',
         selectedWeight: '',
         selectedPrice: '',
+        selectedBreed: '',
+
         ageOptions: [
           { label: 'Select Age', value: '' },
           { label: '0-3 months', value: '0-3' },
           { label: '3-6 months', value: '3-6' },
           { label: '6-9 months', value: '6-9' }
         ],
+
         weightOptions: [
           { label: 'Select Weight', value: '' },
           { label: '0-60 kgs', value: '0-60' },
           { label: '60-120 kgs', value: '60-120' },
           { label: '120-180 kgs', value: '120-180' }
+        ],
+
+        breedOptions: [
+          { label: 'Select Breed', value: '' },
+          { label: 'Ankamali', value: 'Ankamali' },
+          { label: 'American YorkShire', value: 'American YorkShire' },
+          { label: 'Angeln SaddleBack', value: 'Angeln SaddleBack' }
         ],
         priceOptions: 0.00
       };
@@ -56,7 +66,8 @@ const PriceCalculator = {
       },
       selectedWeight() {
         this.selectedPrice = '';
-      }
+      },
+
     }
   };
 

@@ -3,7 +3,7 @@
 
         <TopBar />
 
-        <form class="form">
+        <form @submit="submitForm" class="form">
             <NuxtLink to="/"><Icon class="icon" name="mdi:arrow-left-thin" color="black"/></NuxtLink>
 
     
@@ -21,11 +21,8 @@
     
             <div class="input-fields">
                 <label for="breed">Breed</label>
-                <select name="breed">
-                    <option>Select Breed</option>
-                    <option>Ankamali</option>
-                    <option>American YorkShire</option>
-                    <option>Angeln SaddleBack</option>
+                <select name="breed" v-model="selectedBreed">
+                    <option v-for="breedOption in breedOptions" :value="breedOption.value">{{ breedOption.label }}</option>
                 </select>
             </div>
             <div class="input-fields">
@@ -46,6 +43,7 @@
             </div>
     
             <button class="button" type="submit">Submit Request</button>
+            <div v-if="showNotification" :class="`notification-${notificationType}`">{{ notificationMessage }}</div>
         </form>
     </div>
 
@@ -54,10 +52,37 @@
 
 <script>
 
-    import PriceCalculator from "./PriceCalculator"
+    import PriceCalculator from "@/mixins/priceCalculator"
+    import notificationMixin from "@/mixins/notificationMIxin"
 
     export default {
-        mixins: [PriceCalculator],
+        mixins: [PriceCalculator, notificationMixin],
+
+        methods: {
+            submitForm(e) {
+                e.preventDefault()
+                console.log('Form submitted')
+                if (this.selectedAge && this.selectedWeight) {
+                    this.showSuccessNotification(
+                        `   Request Submitted
+                            Number of Pigs: ${this.rangeValue}
+                            Breed: ${this.selectedBreed}
+                            Age: ${this.selectedAge}
+                            Weight: ${this.selectedWeight}
+                            Total Price: ${this.computedPrices}
+
+                        `
+                        )
+                    setTimeout(()=>{
+                        this.$router.push('/')
+                    }, 2000)
+                } else {
+                    this.showErrorNotification('Please Fill in the breed, age and weight')
+                    return;
+                }
+            }
+        }
+
     }
 
 

@@ -1,5 +1,13 @@
 <template>
     <div ref="container" class="nairobi-logo">
+        <div class="hum">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="sidebar">
+
+        </div>
         <div class="image"><img src="/nairobilogo.webp"/></div>
         <NuxtLink to="/login"><Icon class="icon" name="mdi:account-circle-outline"/></NuxtLink>
     </div>
@@ -24,5 +32,5 @@ onMounted(()=>{
 </script>
 
 <style scoped lang="scss">
-@use '~/assets/scss/index.scss'
+@use '~/assets/scss/topbar.scss'
 </style>

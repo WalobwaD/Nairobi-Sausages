@@ -4,7 +4,7 @@
         <TopBar />
 
         <form @submit="submitForm" class="form">
-            <NuxtLink to="/"><Icon class="icon" name="mdi:arrow-left-thin" color="black"/></NuxtLink>
+            <NuxtLink to="/dashboard"><Icon class="icon" name="mdi:arrow-left-thin" color="black"/></NuxtLink>
 
     
             <div class="range">

@@ -1,44 +1,72 @@
 <template>
-
     <div class="main">
-        
-        <!--Top Bar-->
-        <TopBar />
 
-        <!--Dashboard Section-->
-        <div class="dashboard">
-            <div class="title">
-                <h1>DashBoard</h1>
-                <div class="line"></div>
-            </div>
-            <DashBoardCards />
+        <div class="barner" >
+            <img src="/Kenyancheesesausages.jpg"/>
         </div>
 
-        <!--LatestPosts section-->
-        <div class="latest-posts">
-            <div class="title">
-                <h1>Latest Posts</h1>
-                <div class="line"></div>
+        <div class="logo-form">
+
+            <div class="nairobi-logo">
+                <img src="/nairobilogo.webp"/>
             </div>
-            <LatestCards />
+            
+            <form @submit="submitForm" class="login-form">
+                <div class="labels">
+                    <label for="email">Enter Your Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="Email" />
+                </div>
+    
+                <div class="labels">
+                    <label for="password">Enter You Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" />
+                </div>
+    
+    
+                <button class="login-button">Login</button>
+    
+                <div class="text">
+                    <p>Don't Have an Account? <a class="register">Register</a></p>
+                    <p class="forgot">Forgot Password</p>
+                    <div v-if="showNotification" :class="`notification-${notificationType}`">{{ notificationMessage }}</div>
+                    <!-- <NuxtLink to="/dashboard"><Icon class="icon" name="mdi:arrow-left-thin" color="black"/></NuxtLink> -->
+                </div>
+            </form>
         </div>
 
-        <!--CopyRight-->
-        <footer class="footer">
-            <p>© {{ year }} Walobwa Dan. All Rights Reserved.</p>
-        </footer>
     </div>
-
 </template>
 
-<script setup>
+<script>
+    import notificationMixin from '@/mixins/notificationMixin'
 
-//dynamic date
-const date = new Date();
-const year = date.getFullYear();
+    export default{
+        mixins: [notificationMixin],
+        
+        methods: {
+            submitForm(e){
+                e.preventDefault()
+                const email = e.target.email.value
+                const password = e.target.password.value
+
+                if (email && password) {
+                    const formattedName = email.split('@')[0]
+                    this.showSuccessNotification(`Welcome ${formattedName}`)
+                    setTimeout(()=>{
+                        this.$router.push('/dashboard')
+                    }, 3000)
+                } else {
+                    this.showErrorNotification('Enter your Email and Pawword')
+                }
+
+            }
+        }
+    }
+
+
+
 </script>
 
 <style scoped lang="scss">
-@use '~/assets/scss/index.scss'
-
+@use '~/assets/scss/login.scss';
 </style>

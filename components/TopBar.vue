@@ -1,7 +1,7 @@
 <template>
     <div ref="container" class="nairobi-logo">
         <div class="image"><img src="/nairobilogo.webp"/></div>
-        <NuxtLink to="/login"><Icon class="icon" name="mdi:account-circle-outline"/></NuxtLink>
+        <NuxtLink to="/"><Icon class="icon" name="mdi:account-circle-outline"/></NuxtLink>
     </div>
 
 </template>

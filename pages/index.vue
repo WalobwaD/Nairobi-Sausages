@@ -54,7 +54,7 @@
                     this.showSuccessNotification(`Welcome ${formattedName}`)
                     setTimeout(()=>{
                         this.$router.push('/dashboard')
-                    }, 3000)
+                    }, 2000)
                 } else {
                     this.showErrorNotification('Enter your Email and Pawword')
                 }

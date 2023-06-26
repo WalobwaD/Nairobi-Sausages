@@ -74,7 +74,7 @@
                         `
                         )
                     setTimeout(()=>{
-                        this.$router.push('/')
+                        this.$router.push('/dashboard')
                     }, 2000)
                 } else {
                     this.showErrorNotification('Please Fill in the breed, age and weight')

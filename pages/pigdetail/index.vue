@@ -53,7 +53,7 @@
 <script>
 
     import PriceCalculator from "@/mixins/priceCalculator"
-    import notificationMixin from "@/mixins/notificationMIxin"
+    import notificationMixin from "@/mixins/notificationMixin"
 
     export default {
         mixins: [PriceCalculator, notificationMixin],
